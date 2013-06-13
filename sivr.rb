@@ -6,9 +6,9 @@ get '/' do
   Twilio::TwiML::Response.new do |r|
     r.Say "Welcome to TPS - port of IVR from PHP to Ruby"
     r.Gather :numDigits => 1, :action => '/handle-gather', :method => 'get' do |g|
-      g.say "For store hours, press 1."
-      g.say "To speak to an agent, press 2."
-      g.say "To check your package status, press 3."
+      r.say "For store hours, press 1."
+      r.say "To speak to an agent, press 2."
+      r.say "To check your package status, press 3."
     end  
   end.text
 end
