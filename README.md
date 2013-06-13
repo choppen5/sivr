@@ -8,7 +8,10 @@ Does exactly what this example does: http://www.twilio.com/docs/howto/ivrs-the-b
 To use:
 
 git clone git@github.com:choppen5/sivr.git
+
 cd sivr
+
 bundle install
+
 ruby sivr.rb
 
